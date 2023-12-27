@@ -7,19 +7,19 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer {
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: fit-content;
+  
   background-color: #2109415a;
   color: white;
   text-align: center;
+  margin-top: auto;
 }
 
 body{
-  background-image: url(https://cdn.wallpapersafari.com/51/11/pZAKVE.jpg);
+  background-image: url(https://serenityeventcenter.com/wp-content/uploads/2016/08/gray-background-31.jpg);
   background-size: 100%;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*MENIUUUUUUUUUUUUUUU!!!!!!!!!!!!!!!!!!!!*/
@@ -93,20 +93,42 @@ body{
   .sidenav a {font-size: 18px;}
 }
 
-.bodyus{
-  border: 2px solid black;
-  color: #ffffff;
+
+.content{
+  height: 100% !important;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.left{
   
-  margin:auto;
-  text-align:center;
+  margin: 20px;
+  width: 25%;
+text-align: left;
+color: greenyellow;
+overflow: hidden;
+}
+
+.stiri{
+  text-align: left;
   
-  height: 100%;
-  }
-.
-  .stiri{
-    position: static;
-    height: 100%;
-    width: 300px;
-    border: 3px solid #c0c0c0;
-    
-  }
+  
+}
+
+.right{
+  margin: 20px;
+  width: 25%;
+  text-align: right;
+  color: greenyellow;
+  overflow: hidden;
+}
+
+.home{
+  margin: 20px;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+
