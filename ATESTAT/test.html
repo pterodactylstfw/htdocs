@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+      <script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</head>
+
+
+<body>
+
+    <div class="header">
+        <table class="headtable">
+        <tr>
+            <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br><br><br>
+      <a href="#">Tehnologie</a>
+      <br>
+      <a href="product.html">Produsul</a>
+      <br>
+      <a href="#">Echipa</a>
+      <br>
+      <a href="#">Contact</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"><div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div></span></td>
+
+          <center><td id="lednetlogo" ><center><img src="icons/LEDNETtxt.png"></center></td></center>
+
+          <td id="butauth"><p style="float:right;">Autentificare</p></td>
+
+
+        </tr> </table>
+    </div>
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <table id="maintable"><tr>
+          <div id="aligntextstg">
+          <td id="preztext" style="width:50%;height: 80%; padding: 5px; margin-left: 20px ;">
+            <div class="text">
+          <h1>INTERNETUL.</h1>
+          <h3 style="position: relative; top:-18px">Regândit.</h3>
+          <p style="position: relative; top:-18px">Disponibil și pentru clienții casnici.</p>
+          <p>LiFi XC este noul echipament de transmitere a datelor prin conexiune fara fir, reusind sa atinga viteze uimitoare si latenta insesizabila.</p>
+          <p>Datorita noii tehnologii pe care o introduce acest modul, va puteti bucura de internet prin lumina LED de care deja dispuneti, fara a mai fi nevoie de undele radio, utilizate in cazul tehnologii Wi-Fi.</p>
+        <br><br><br>
+        <p class="center" style="text-align: center;">Aflati mai multe detalii despre Li-Fi si produsele noastre</p>
+        
+        </div>
+        <div class="butoane"><button href="https://google.com" style="float:right; text-align: center; width: 60px; height: 40px;" type="button" onclick="alert('Hello world!')">Click Me!</button>
+          <button style="float: left; width: 60px; height: 40px; " type="button" onclick="alert('Hello world!')">Click Me!</button></div>
+
+          </td>
+        </div>
+        
+        
+          <td style="width:50%; padding: 10px;"><table style="display: inline-block;  max-width: 100%; height: 100%;"><tr><td><img id="stick" src="icons/stick.png"></td>
+          <td><img id="accpoint" src="icons/accpoint.png"></td></tr></table>
+          
+          </td>
+
+        
+
+        </tr>
+
+        
+      </div>
+
+      
+      
+      </div>
+
+      
+
+
+      
+
+
+</body>
+<div class="footer">
+  <p class="center">© 2024 Raul Constantin. Toate drepturile rezervate.</p></div>
+</html>

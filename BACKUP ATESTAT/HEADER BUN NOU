@@ -1,0 +1,182 @@
+CSS
+
+body{
+    background-color: black;
+    
+    height: 200vh;
+}
+
+.center {
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+.header{
+    display: flex;
+    
+    height: 10vh;
+    z-index: 1; 
+    
+    background: rgba(85, 40, 127, 0.498);
+    width: 100%;
+    border: 1px solid white;
+    
+}
+
+.header img{
+    margin: 0;
+    padding: 0;
+}
+
+.headtable{
+  position: absolute;
+  left: 0.9px;
+  margin: 0;
+  width: 99%;  
+}
+
+#lednetlogo{
+  width: 33.33%;
+  padding-top:3px;
+}
+
+#butauth{
+  color: white;
+  font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
+}
+
+/*BUTON PT MENIU*/
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+
+/*MENIU*/
+/* The side navigation menu */
+.sidenav {
+    border: 1px solid white;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+  HTML 
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css">
+      <title>Document</title>
+  
+  
+      <script>
+          /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+      </script>
+  </head>
+  
+  
+  <body>
+  
+      <div class="header">
+          <table class="headtable">
+          <tr>
+              <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+            
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()"><div class="hamburger"></div>
+              <div class="hamburger"></div>
+              <div class="hamburger"></div></span></td>
+  
+            <center><td id="lednetlogo" style=""><center><img src="icons/LEDNETtxt.png"></center></td></center>
+  
+            <td id="butauth"><p style="float:right;">Autentificare</p></td>
+  
+  
+          </tr> </table>
+            
+            
+  
+      
+          
+          
+      
+      
+      </div>
+  
+  
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+          <p style="color: green;">DADADADA</p>
+          <p style="color: green;">DADADADA</p>
+          <p style="color: green;">DADADADA</p>
+          <p style="color: green;">DADADADA</p>
+          <p style="color: green;">DADADADA</p>
+          <p style="color: green;">DADADADA</p>
+        </div>
+  
+  
+  </body>
+  </html>  
