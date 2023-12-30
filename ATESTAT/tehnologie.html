@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tehnologia Li-Fi</title>
+    <meta charset="utf-8" lang="ro">
+    <link rel="stylesheet" type="text/css" href="tehncss.css">
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function login(showhide){
+if(showhide == "show"){
+    document.getElementById('popupbox').style.visibility="visible";
+}else if(showhide == "hide"){
+    document.getElementById('popupbox').style.visibility="hidden"; 
+}
+}
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <table class="headtable">
+        <tr>
+            <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br><br><br>
+      <a href="tehnologie.html">Tehnologie</a>
+      <br>
+      <a href="product.html">Produsul</a>
+      <br>
+      <a href="#">Echipa</a>
+      <br>
+      <a href="#">Contact</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"><div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div></span></td>
+
+          <center><td id="lednetlogo" ><center><a href="main.html"><img src="icons/LEDNETtxt.png"></a></center></td></center>
+
+          <td id="butauth"><p style="float:right;"><a href="javascript:login('show');">Autentificare</a></p></td>
+
+
+        </tr> </table>
+    </div>
+
+    <div id="titlu"><h1 style="position: relative;">Li-Fi-powered by pureLIFI & LEDNET</h1></div>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+        <div id="popupbox"> 
+            <form name="login" action="" method="post">
+            <center>Username:</center>
+            <center><input name="username" size="14" /></center>
+            <center>Password:</center>
+            <center><input name="password" type="password" size="14" /></center>
+            <center><input type="submit" name="submit" value="login" /></center>
+            </form>
+            <br />
+            <center><a href="javascript:login('hide');">close</a></center> 
+            </div> 
+
+        <img id="logo" src="icons/logo-lifi.jpg">
+        <div class="prezentare">
+            <table id="tabelprez">
+            <tr><td><h1><i>simte viteza de inegalat a luminii...</i></h1>
+            <h2>Noul protocol Li-Fi te surprinde cu amețitoarea sa viteză, de 224 GB/s!</h2>
+            <h2>În plus, cu ajutorul latenței sale de doar 2 milisecunde, te poți bucura de o conexiune stabilă și foarte receptivă, atât pentru filmele ce le urmărești, cât și aplicațiile ce necesită o rețea calitativă.</h2>
+            <br><br><br>
+            <p style="text-align: right; font-size: 20px;">Produsul nostru, Li-Fi XC, oferit de compania pureLIFI, îți oferă beneficiile celei mai recente rețele, având posibilitatea să cunoști avantajele Li-Fi-ului înaintea celorlalți clienți, cu o ofertă avantajoasă:</p>
+            <br><br>
+            <h2 style="text-align: center;">COMANDĂ ÎN AVANS LI-FI XC</h2>
+            <h3 style="text-align: center;"> luând legătura cu LEDNET</h3></td></tr>
+
+            <tr class="center"><center><td><FORM class="formcontact" action="numere.php" method="POST">
+                <CENTER>
+                <TABLE class="center" style="width: 80%; height: 80%;"BORDER="2px">
+                <TR><TD colspan="2"> <center>Datele dumneavoastră de contact</center> </TD></TR>
+                <TR>
+                    <TD> Nume și prenume </TD>
+                    <TD> <INPUT TYPE="TEXT" name="npr" size="35" style="width: 95%;"> </TD>
+                    </TR>
+                <TR>
+                    <TD> E-mail </TD>
+                    <TD> <INPUT TYPE="email" name="email" size="35" style="width: 95%;"> </TD>
+                </TR>
+                <TR>
+                <TD> Mă abonez la newsletter</TD>
+                <TD> <INPUT TYPE="RADIO" name="op" value="1">Da</INPUT> <div style="float: right;">Nu<INPUT  TYPE="RADIO" name="op" value="2"></INPUT></div> </TD>
+               
+                </TR>
+                <TR>
+                    <TD> Număr de telefon</TD>
+                    <TD> <INPUT TYPE="TEXT" name="npr" size="10" style="width: 95%;"></TD>
+                </TR>
+                <TR><TD colspan="2">
+                <INPUT TYPE="SUBMIT" style="float: right;" value="TRIMITE">
+                <INPUT TYPE="RESET" value="STERGE">
+                </TD> </TR> 
+                </TABLE>
+                </FORM></td></center></tr></table>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <center><p>© 2024 Raul Constantin. Toate drepturile rezervate.</p></center></div>
+</body>
+
+</html>
