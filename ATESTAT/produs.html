@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!-- PARALAAAAAX 
+Hai sa incercam header mai aero si mai classy
+-->
+
+<html>
+<head>
+    <title> Produsul nostru </title>
+    <meta charset="utf-8" lang="ro">
+    <link rel="stylesheet" type="text/css" href="produscss.css">
+    <script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</head>
+
+<body>
+    <div class="blur"><div class="header">
+        <table class="headtable">
+        <tr>
+            <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br><br><br>
+      <a href="main.html">Acasă</a>
+      <br>
+      <a href="tehnologie.html">Tehnologie</a>
+      <br>
+      <a href="#">Echipa</a>
+      <br>
+      <a href="#">Contact</a>
+
+      <center><div id="imaginesdb"><img src="icons/LEDNETtxt.png"></div></center>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"><div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div></span></td>
+
+          <center><td id="lednetlogo" ><center><img src="icons/LEDNETtxt.png"></center></td></center>
+
+          <td id="butauth"><p style="float:right;">Autentificare</p></td>
+
+
+        </tr> </table>
+    </div></div>
+
+
+    <div id="main">
+
+      <div class="parallax1"></div>
+
+      <div style="height:1000px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

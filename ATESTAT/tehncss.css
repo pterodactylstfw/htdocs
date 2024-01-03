@@ -9,9 +9,7 @@ body{
     flex-direction: column;
     
 }
-#logo{
-    float: right;
-}
+
 
 
 
@@ -22,7 +20,22 @@ body{
     padding: 10px;
   }
 
-.header{
+  .blur {
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/044/765/038/large/philip-butkiewicz-bluepurple-preview.jpg?1641099260');
+    top: 100px;
+    background-size: 100%;
+    background-attachment: fixed;
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow: 0px 0px 2px rgba(0,0,0,.25);
+    
+    
+    text-align: center;
+    font-size: 24px;
+    font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
+    padding: 24px;
+  }
+  
+  .header{
     display: flex;
     position: sticky;
     top: -1;
@@ -30,43 +43,40 @@ body{
     min-height: 85px;
     height: fit-content;
     z-index: 1; 
-    background: rgba(85, 40, 127, 0.498);
+    
     width: 100%;
     
     
-}
-
-.header img{
+  }
+  
+  .header img{
     margin: 0;
     padding: 0;
-}
-
-.headtable{
+  }
+  
+  .headtable{
   position: absolute;
   left: 0.9px;
   margin: 0;
   width: 99%;  
-}
-
-#lednetlogo{
+  }
+  
+  #lednetlogo{
   width: 33.33%;
-  padding-top:3px;
-}
-
-#butauth{
+  padding-top:5px;
+  }
+  
+  #butauth{
   color: white;
   
-}
+  }
 
-/*BUTON PT MENIU*/
-
-.hamburger {
-  width: 35px;
-  height: 6px;
-  background-color: white;
-  margin: 5px 0;
-}
-
+  .hamburger {
+    width: 35px;
+    height: 6px;
+    background-color: white;
+    margin: 5px 0;
+    }
 
 /*MENIU*/
 /* The side navigation menu */
@@ -108,6 +118,15 @@ body{
     margin-left: 50px;
   }
   
+  #imaginesdb{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -132,29 +151,35 @@ body{
     }
 
   #titlu{
-    width: 100%;
-    border: 1px solid green;
+    width: 98%;
+    padding-top: 15px;
+    padding-left: 20px;
     height: auto;
   }
 
   #main{
-    border: 1px solid red;
+    
+    
     height: 100%;
-    padding: 90px;
+    padding: 50px;
     margin: 0;
+    
   }
 
   .prezentare{
-    border: 1px solid purple;
-    width:900px;
-    height: 800px;
+    
+    width:90%;
+    height: 900px;
     margin: 20px;
     padding: 45px;
 
   }
 
   #tabelprez{
-    border: 1px solid yellow;
+    padding-left:1%;
+    padding-right: 1%;
+    border: 2px solid rgba(85, 40, 127, 0.498);
+    border-radius: 20px;
     width: 100%;
     height: 100%;
   }
@@ -164,6 +189,8 @@ body{
     margin-left:auto ;
     margin-right: auto;
   }
+
+  
 
 
   .footer{
