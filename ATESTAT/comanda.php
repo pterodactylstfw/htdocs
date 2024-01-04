@@ -1,24 +1,33 @@
 <?php
-// database connection code
-// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
+    if(isset($_POST['submit']))
+    {
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+		$numar = $_POST['number'];
+    }
 
-$con = mysqli_connect('localhost', 'root','db_contact');
+	// database details
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "db_contact";
 
-// get the post records
-$txtName = $_POST['txtName'];
-$txtEmail = $_POST['txtEmail'];
-$txtPhone = $_POST['txtPhone'];
+	$con = mysqli_connect($host, $username, $password, $dbname);
 
+	if (!$con)
+    {
+        die("Connection failed!" . mysqli_connect_error());
+    }
 
-// database insert SQL code
-$sql = "INSERT INTO `tbl_comanda` (`ID`, `Nume`, `E-Mail`, `Numar`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone' )";
+	$sql = "INSERT INTO tbl_comanda (ID, Prenume, Nume, Email, Numar_de_telefon) VALUES ('0', '$fname', '$lname', '$email', '$numar')";
 
-// insert in database 
-$rs = mysqli_query($con, $sql);
-
-if($rs)
-{
-	echo "Contact Records Inserted";
-}
+	$rs = mysqli_query($con, $sql);
+    if($rs)
+    {
+        echo "Datele au fost transmise cu succes! Multumim!";
+    }
+  
+	mysqli_close($con);
 
 ?>

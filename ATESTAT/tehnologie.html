@@ -30,7 +30,7 @@ function myFunction() {
             <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <br><br><br>
-      <a href="main.html">Acasă</a>
+      <a href="index.html">Acasă</a>
       <br>
       <a href="tehnologie.html">Tehnologie</a>
       <br>
@@ -38,7 +38,7 @@ function myFunction() {
       <br>
       <a href="contact.html">Contact</a>
     
-      <center><div id="imaginesdb"><a href="main.html"><img src="icons/LEDNETtxt.png"></a></div></center>
+      <center><div id="imaginesdb"><a href="index.html"><img src="icons/LEDNETtxt.png"></a></div></center>
           </div>
           
           <!-- Use any element to open the sidenav -->
@@ -46,7 +46,7 @@ function myFunction() {
             <div class="hamburger"></div>
             <div class="hamburger"></div></span></td>
     
-          <center><td id="lednetlogo" ><a href="main.html"><center><img src="icons/LEDNETtxt.png"></center></a></td></center>
+          <center><td id="lednetlogo" ><a href="index.html"><center><img src="icons/LEDNETtxt.png"></center></a></td></center>
     
           <td><button onclick="myFunction()" style="float: right; width: 100px; height: 40px;  border-radius: 5px; font-weight: 900; color:cornflowerblue; text-align: center; font-size: medium;">PHP</button></td>
     
@@ -72,30 +72,40 @@ function myFunction() {
             <p style="text-align: right; font-size: 20px;">Produsul nostru, Li-Fi XC, oferit de compania pureLIFI, îți oferă beneficiile celei mai recente rețele, având posibilitatea să cunoști avantajele Li-Fi-ului înaintea celorlalți clienți, cu o ofertă avantajoasă:</p>
             <br><br>
             <h2 style="text-align: center;">COMANDĂ ÎN AVANS LI-FI XC</h2>
-            <h3 style="text-align: center;"> luând legătura cu LEDNET</h3></td></tr>
+            <h3 style="text-align: center;"> luând legătura cu LEDNET</h3>
+            <h3 style="text-align: center;"> *te vom contacta pe E-Mail sau pe numărul tău de telefon.*</h3></td></tr>
 
-            <tr class="center"><center><td><fieldset>
-                <legend>Formular de contact</legend>
-                <form name="frmContact" method="post" action="comanda.php">
-                <p>
-                <label for="Name">Nume </label>
-                <input type="text" name="txtName" id="txtName">
-                </p>
-                <p>
-                <label for="email">E-Mail</label>
-                <input type="text" name="txtEmail" id="txtEmail">
-                </p>
-                <p>
-                <label for="phone">Numar</label>
-                <input type="text" name="txtPhone" id="txtPhone">
-                </p>
-                
-                <p>&nbsp;</p>
-                <p>
-                <input type="submit" name="Submit" id="Submit" value="Submit">
-                </p>
-                </form>
-                </fieldset></td></center></tr></table>
+            <tr class="center"><center><td>
+              <div class="form">
+              <center><form method="POST" action="comanda.php">
+                <table border="1" style=" border: 2px solid ghostwhite; width: 85%; height:fit-content; font-size: 22px;">
+                <tr><p>
+                <td width="30%"><label for="fsname">Prenume </label></td>
+                <td colspan="2"><input style="width: 100%;" type="text" name="fname" id="fname"></td>
+                </p></tr>
+                <tr><p>
+                <td ><label for="lname">Nume </label></td>
+                <td colspan="2"><input style="width: 100%;" type="text" name="lname" id="lname"></td>
+                </p></tr>
+                <tr><p>
+                  
+                <td><label for="email">E-Mail</label></td>
+                <td colspan="2"><input style="width: 100%;" type="text" name="email" id="email"></td>
+
+                </p></tr>
+                <tr><p>
+                  <td><label for="numar">Număr de telefon</label></td>
+                  <td colspan="2"><input style="width: 100%;" type="text" name="number" id="number"></td>
+  
+                  </p></tr>
+                  
+
+                <tr</Tr>
+
+                <tr><p>
+                <td colspan=2><center><input type="submit" name="submit" id="submit" value="Submit"></center></td>
+                </p></tr>
+              </table></form></center></td></center></tr></table>
         </div></td>
         <td><table style=" padding: 1%; border: 3px solid rgb(75, 73, 73); border-radius: 20px; "><tr><td><center><img src="icons/telefon.png" style="width: 90%;"></center></td>
         <td ><img style="height: 100%;" src="icons/shape_pic-4.png"></td></tr>

@@ -1,0 +1,19 @@
+create database db_contact;
+
+CREATE TABLE `db_contact`.`tbl_comanda` 
+(`ID` INT(20) NOT NULL AUTO_INCREMENT , 
+`Prenume` VARCHAR(20) NOT NULL , 
+`Nume` VARCHAR(30) NOT NULL , 
+`E-Mail` VARCHAR(40) NOT NULL ,
+`Numar_de_telefon` VARCHAR(15) NOT NULL ,
+PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+
+CREATE TABLE `db_contact`.`tbl_contact` 
+(`ID` INT(20) NOT NULL AUTO_INCREMENT , 
+`Prenume` VARCHAR(20) NOT NULL , 
+`Nume` VARCHAR(30) NOT NULL , 
+`E-Mail` VARCHAR(40) NOT NULL ,
+`Numar_de_telefon` VARCHAR(15) NOT NULL ,
+PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+
+
