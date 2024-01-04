@@ -15,6 +15,10 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
 }
 
+function myFunction() {
+  location.replace("http://localhost/phpmyadmin")
+}
+
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -33,11 +37,11 @@ function closeNav() {
       <br>
       <a href="tehnologie.html">Tehnologie</a>
       <br>
-      <a href="#">Echipa</a>
+      <a href="produs.html">Produs</a>
       <br>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
 
-      <center><div id="imaginesdb"><img src="icons/LEDNETtxt.png"></div></center>
+      <center><div id="imaginesdb"><a href="main.html"><img src="icons/LEDNETtxt.png"></a></div></center>
           </div>
           
           <!-- Use any element to open the sidenav -->
@@ -45,9 +49,10 @@ function closeNav() {
             <div class="hamburger"></div>
             <div class="hamburger"></div></span></td>
 
-          <center><td id="lednetlogo" ><center><img src="icons/LEDNETtxt.png"></center></td></center>
+            <center><td id="lednetlogo" ><a href="main.html"><center><img src="icons/LEDNETtxt.png"></center></a></td></center>
 
-          <td id="butauth"><p style="float:right;">Autentificare</p></td>
+          <td><button onclick="myFunction()" style="float: right; width: 100px; height: 40px;  border-radius: 5px; text-align: center; font-size: medium;">PHP</button></td>
+
 
 
         </tr> </table>
@@ -56,17 +61,59 @@ function closeNav() {
 
     <div id="main">
 
-      <div class="parallax1"></div>
+      <h1> pureLiFi - LiFi XC</h1>
+      <h2>Viteză cum nu ai mai văzut vreodată.</h2>
 
-      <div style="height:1000px;background-color:red;font-size:36px">
-        Scroll Up and Down this page to see the parallax scrolling effect.
-        This div is just here to enable scrolling.
-        Tip: Try to remove the background-attachment property to remove the scrolling effect.
-        </div>
+      <table  id="contenttable">
+        <tr style="border:1px solid gray">
+          
+          <td  style="width: 12%;"><img src="icons/stick.png" style=" height:600px;">
+            <center><h3>MODUL (RECEPTOR) LI-FI XC</h3>
+              <p>stick USB-A; sistem compatibil cu Windows, macOS și Linux</p></center>
+          </td>
+          
+          <td style=" width: 20%;"><table  style="height: 100%;"><tr><td style="height: 82%;"><img src="icons/accpoint.png" ></td></tr><tr style=""><td><center><h3>ACCESS POINT (MODULATOR)</h3>
+            <div id="textprod"><p>compatibil cu majoritatea corpurilor de iluminat care folosesc LED-uri</p></div></center></td></tr></table> </td>
+      <td style="vertical-align: top; padding: 1%;"><p style="text-align: left; font-size: 26px;" >Li-Fi este o tehnologie nouă care transmite internetul prin lumina emisă de becuri LED.
+        <br><br>
+          <ol style="font-size: 28px;">Acest sistem are 2 componente esențiale: <br><br>
+        <li>modulatorul (care modifică intensitatea luminii emise de LED);</li><br>
+        <li> receptorul (celule fotoreceptoare);</li>
+      </ol><br><br></p>
+      <center><p style="font-weight: 200; font-size: 32px;">Principiul care stă la bază este unul relativ simplu, și anume, prezența luminii înseamnă 1, iar absența ei, 0. <br><br>Astfel, codul binar, datele, pot fi transmise cu ușurință prin modularea extrem de rapidă a luminii emise de LED-urile modulabile.</center></p></td>
+      </tr>
+      </table>
+
+      
+      
+
 
     </div>
 
+<div class="secondary">
+    <div class="parallax1"></div>
+    <div style="height:fit-content;background-color:rgba(85, 40, 127, 0.304);font-size:36px">
+      <center><h1>Cu ajutorul său, poți transmite și primi date la o viteză amețitoare, prin intermediul protoculului USB 3.2.</h1>
+      <h2>Conține fascicule ce absorb lumina, deci data modulată sub formă de biți, respectiv senzorul de infraroșu, cu care poți să trimiți informație spre access point, sub formă de biți.</h2></center>
+      </div>  
 
+      <div class="parallax2"></div>
+
+      <div style="height:fit-content;background-color:rgba(85, 40, 127, 0.498);font-size:36px">
+        <center><h1>Acesta transformă lumina LED în biții care constituie comunicarea dintre dispozitivele tale.</h1>
+        <h2>Se conectează cu mufa RJ-45, standard, pe care o obții de la furnizorul tău de internet, sau cu fibra optică.</h2>
+
+        <p style="font-weight: 200; font-style: oblique;">Ce mai aștepți? <a id="contact" href="contact.html">Contactează-ne</a> să testezi produsul nostru, sau chiar să îl cumperi, pentru a-l utiliza zilnic în toate activitățile tale.</p>
+      </center> </div>  
+
+  </div>
+
+  <div class="footer">
+    <center><p>© 2024 Raul Constantin. Toate drepturile rezervate.</p></center></div>
+  
+
+
+   
 
 
 </body>

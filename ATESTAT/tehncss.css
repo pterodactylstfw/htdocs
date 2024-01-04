@@ -162,6 +162,7 @@ body{
     
     height: 100%;
     padding: 50px;
+    padding-bottom: 12%;
     margin: 0;
     
   }
@@ -194,7 +195,17 @@ body{
 
 
   .footer{
-    margin-top: auto;
+    margin-bottom: 0;
+    margin-top:auto;
     background-color:rgba(85, 40, 127, 0.498);
     
   }
+
+#links:hover{
+  color: rgb(33, 140, 130);
+}
+
+#links:visited{
+  color: paleturquoise;
+}
+
