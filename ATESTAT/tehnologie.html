@@ -17,12 +17,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-function login(showhide){
-if(showhide == "show"){
-    document.getElementById('popupbox').style.visibility="visible";
-}else if(showhide == "hide"){
-    document.getElementById('popupbox').style.visibility="hidden"; 
-}
+function myFunction() {
+  location.replace("http://localhost/phpmyadmin")
 }
     </script>
 </head>
@@ -52,7 +48,7 @@ if(showhide == "show"){
     
           <center><td id="lednetlogo" ><center><img src="icons/LEDNETtxt.png"></center></td></center>
     
-          <td id="butauth"><p style="float:right;">Autentificare</p></td>
+          <td><button onclick="myFunction()" style="float: right; width: 100px; height: 40px;  border-radius: 5px; text-align: center; font-size: medium;">PHP</button></td>
     
     
         </tr> </table>
@@ -78,33 +74,28 @@ if(showhide == "show"){
             <h2 style="text-align: center;">COMANDĂ ÎN AVANS LI-FI XC</h2>
             <h3 style="text-align: center;"> luând legătura cu LEDNET</h3></td></tr>
 
-            <tr class="center"><center><td><FORM class="formcontact" action="numere.php" method="POST">
-                <CENTER>
-                <TABLE class="center" style="width: 80%; height: 80%;"BORDER="2px">
-                <TR><TD colspan="2"> <center>Datele dumneavoastră de contact</center> </TD></TR>
-                <TR>
-                    <TD> Nume și prenume </TD>
-                    <TD> <INPUT TYPE="TEXT" name="npr" size="35" style="width: 95%;"> </TD>
-                    </TR>
-                <TR>
-                    <TD> E-mail </TD>
-                    <TD> <INPUT TYPE="email" name="email" size="35" style="width: 95%;"> </TD>
-                </TR>
-                <TR>
-                <TD> Mă abonez la newsletter</TD>
-                <TD> <INPUT TYPE="RADIO" name="op" value="1">Da</INPUT> <div style="float: right;">Nu<INPUT  TYPE="RADIO" name="op" value="2"></INPUT></div> </TD>
-               
-                </TR>
-                <TR>
-                    <TD> Număr de telefon</TD>
-                    <TD> <INPUT TYPE="TEXT" name="npr" size="10" style="width: 95%;"></TD>
-                </TR>
-                <TR><TD colspan="2">
-                <INPUT TYPE="SUBMIT" style="float: right;" value="TRIMITE">
-                <INPUT TYPE="RESET" value="STERGE">
-                </TD> </TR> 
-                </TABLE>
-                </FORM></td></center></tr></table>
+            <tr class="center"><center><td><fieldset>
+                <legend>Formular de contact</legend>
+                <form name="frmContact" method="post" action="comanda.php">
+                <p>
+                <label for="Name">Nume </label>
+                <input type="text" name="txtName" id="txtName">
+                </p>
+                <p>
+                <label for="email">E-Mail</label>
+                <input type="text" name="txtEmail" id="txtEmail">
+                </p>
+                <p>
+                <label for="phone">Numar</label>
+                <input type="text" name="txtPhone" id="txtPhone">
+                </p>
+                
+                <p>&nbsp;</p>
+                <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+                </p>
+                </form>
+                </fieldset></td></center></tr></table>
         </div></td>
         <td><table style=" padding: 1%; border: 3px solid rgb(75, 73, 73); border-radius: 20px; "><tr><td><center><img src="icons/telefon.png" style="width: 90%;"></center></td>
         <td ><img style="height: 100%;" src="icons/shape_pic-4.png"></td></tr>

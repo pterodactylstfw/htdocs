@@ -11,6 +11,10 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
 }
 
+function myFunction() {
+  location.replace("http://localhost/phpmyadmin")
+}
+
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -45,7 +49,7 @@ function closeNav() {
 
       <center><td id="lednetlogo" ><center><img src="icons/LEDNETtxt.png"></center></td></center>
 
-      <td id="butauth"><p style="float:right;">Autentificare</p></td>
+      <td><button onclick="myFunction()" style="float: right; width: 100px; height: 40px;  border-radius: 5px; text-align: center; font-size: medium;">PHP</button></td>
 
 
     </tr> </table>
