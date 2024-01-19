@@ -1,0 +1,2 @@
+Tablou cu 5 elemente
+det suma elem din tablou

@@ -1,0 +1,6 @@
+a)
+scrieti in php un tablou cu val nr nat.
+cate nr sunt? cate nr fibo sunt?
+b)
+scrieti un tablou asociativ persoana-salariu
+verificati care persoana are salariul cel mai mare
