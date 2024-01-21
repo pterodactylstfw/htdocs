@@ -1,6 +1,6 @@
 <?php
 
-$m= $_POST["n"];
+$m=$_POST["n"];
 echo '<body style="padding:200px;">';
 echo '<center>';
 echo '<form action="prelucrare.php" method="POST">';
