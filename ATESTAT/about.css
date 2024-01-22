@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #121212;
     margin: 0;
     height: 100vh;
     font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
@@ -106,7 +106,7 @@ body{
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: rgba(85, 40, 127, 0.498);;
   }
   
   /* Position and style the close button (top right corner) */
@@ -149,4 +149,25 @@ body{
     margin-top: auto;
     background-color:rgba(85, 40, 127, 0.498);
     
+  }
+
+
+  .parallax1 {
+    /* The image used */
+    background-image: url("icons/echipa.jpg");
+  
+    /* Set a specific height */
+    min-height: 1000px;
+    
+    width: 100%;
+  
+    border-radius: 30px;
+   
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
