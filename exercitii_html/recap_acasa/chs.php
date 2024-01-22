@@ -3,6 +3,9 @@
 $numar=$_POST["num"];
 $opt=$_POST["valtest"];
 
+echo $opt; 
+echo '<br>';
+
 echo '<body style="padding:80px; margin:20px;">';
 echo '<center>';
 
