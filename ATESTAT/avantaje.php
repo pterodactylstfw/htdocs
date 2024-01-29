@@ -25,6 +25,18 @@ document.getElementById("mySidenav").style.width = "0";
 document.getElementById("main").style.marginLeft = "0";
   
 }
+
+document.getElementById('contact').addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Handle form submission logic here (e.g., send data with AJAX)
+
+    // You can also scroll to a specific element or perform other actions after submission
+
+    // Optional: return false to prevent any further event propagation
+    return false;
+});
 </script>
     </head>
     <body>
@@ -129,8 +141,8 @@ document.getElementById("main").style.marginLeft = "0";
                     <h1 style="font-weight: 300;">Află ce soluție ți s-ar potrivi!</h1>
 
                     <center>
-
-                        <form method="post" action="avantaj.php">
+                       
+                        <form method="post" action="avantaje.php">
                             <table  style="border: 1px solid blueviolet; border-spacing: 10px; font-size: 20px; border-radius: 8px;">
                                 <tr>
                                     <td>
@@ -146,8 +158,8 @@ document.getElementById("main").style.marginLeft = "0";
                                         Ai nevoie de viteză de descărcare și încărcare rapidă?
                                     </td>
                                     <td>
-                                        <input type="radio" value="0" name="int2">Nu
-                                        <input type="radio" value="1" name="int2">Da
+                                        <input type="radio" value="1" name="int2">Nu
+                                        <input type="radio" value="0" name="int2">Da
                                     </td>
                                 </tr>
 
@@ -156,8 +168,8 @@ document.getElementById("main").style.marginLeft = "0";
                                         Ești influențat de efectele negative ale undelor radio asupra sănătății?
                                     </td>
                                     <td>
-                                        <input type="radio" value="0" name="int3">Nu
-                                        <input type="radio" value="1" name="int3">Da
+                                        <input type="radio" value="1" name="int3">Nu
+                                        <input type="radio" value="0" name="int3">Da
                                     </td>
                                 </tr>
                                 <tr>
@@ -165,19 +177,51 @@ document.getElementById("main").style.marginLeft = "0";
                                         Dispui de o sumă mai mare de bani, pentru a utiliza Li-Fi-ul, ce este o tehnologie nouă, aflată în dezvoltare.
                                     </td>
                                     <td>
-                                        <input type="radio" value="0" name="int4">Nu
-                                        <input type="radio" value="1" name="int4">Da
+                                        <input type="radio" value="1" name="int4">Nu
+                                        <input type="radio" value="0" name="int4">Da
                                     </td>
 
 
                                 </tr>
 
                                 <tr>
-                                    <td colspan="2"><center><input type="submit" value="Verifica!" style="width: 80%; font-size: 20px; border-radius: 30px;"></center></td>
+                                    <td colspan="2"><center><input type="submit" name="buton" value="Verifica!" style="width: 80%; font-size: 20px; border-radius: 30px;"></center></td>
                                 </tr>
                             </table>
                         </form>
 
+                        <?php if(isset($_REQUEST['buton']))
+                        {
+                            $i1=$_POST["int1"];
+                            $i2=$_POST["int2"];
+                            $i3=$_POST["int3"];
+                            $i4=$_POST["int4"];
+                            
+                            $ct1=0;
+                            $ct0=0;
+                            
+                            if($i1==0) $ct0=$ct0+1;
+                                else $ct1=$ct1+1;
+                            
+                            if($i2==0) $ct0=$ct0+1;
+                                else $ct1=$ct1+1;
+                            
+                            if($i3==0) $ct0=$ct0+1;
+                                else $ct1=$ct1+1;
+                            
+                            if($i4==0) $ct0=$ct0+1;
+                                else $ct1=$ct1+1;
+                            
+                               
+                                if($ct0+$ct1<4) echo '<h1>Te rog sa completezi formularul!</h1>';
+                                else if($ct0>$ct1) echo '<h1>Rețeaua cea mai potrivită pentru tine este Li-Fi!</h1>';
+                            
+                                else if($ct0<$ct1) echo '<h1>Rețeaua cea mai potrivită pentru tine este Wi-Fi!</h1>';
+                            
+                                else echo '<h1>Ambele rețele ți se potrivesc cerințelor tale.</h1>';
+                                header("Location: avantaje.php");
+                            
+                        }?>
                     </center>
 
                 </div>
