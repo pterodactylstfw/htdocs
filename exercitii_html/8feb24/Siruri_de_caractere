@@ -1,0 +1,121 @@
+SIRURI DE CARACTERE IN PHP
+
+--pag 209 manual--
+
+-au un comportament asemanator cu cele din C++
+
+Sir constant --> | " " --> $s=10
+                 | ' '        "Suma=$s";
+                            echo "Suma=$s" --> afisare Suma=10;
+
+                            Daca folosim ' ' --> echo 'Suma=$s';
+                                                 afisare Suma=$s;
+
+
+Variabila - sir de CARACTERE
+$s="informatica";
+
+sirurile sunt indiciate ca la C++, de la 0 la strlen($s);
+
+int strlen(sir)=lungimea sirului de caractere;
+
+$x=strlen($s) --> returneaza 11 ($x=11);
+
+for($i=0;$i<strlen($s);$i++)
+    echo $s[$i].' ';
+
+    !!! .(punctul) ESTE OPERATOR DE CONCATENARE !!!;
+
+$x=ord('A') -->$x=65
+$ch=chr(48) --> $ch=A;
+
+char ch='3';
+int x= ch- '0';
+x=ch-48;
+
+------------------------------------------------------------------------------------------
+
+                    ---ELIMINAREA SPATIILOR DINTR-UN SIR DE CARACTERE---
+
+functia ltrim(text) -- STERGE SPATIILE DE LA INCEPUTUL SIRULUI (left)
+
+functia rtrim(text) -- STERGE SPATIILE DE LA SFARSITUL SIRULUI (right)
+
+functia trim(text) -- STERGE SPATIILE DIN AMBELE EXTREMITATI ALE SIRULUI
+
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+
+                            --FUNCTII SPECIFICE SIRURILOR--
+
+string strtoupper(string) -- TRANSFORMA TOATE CARACTERELE IN LITERE MARI(DOAR LITERELE)
+string strtolower(string) -- TRANSFORMA TOATE CARACTERELE IN LITERE MICI(DOAR LITERELE)
+
+
+                                --COMPARAREA SIRURILOR--
+
+->string strcmp (string s1, string s2) si ofera aceleasi rezultate ca in C++ la returnare
+->string strncmp -- la fel ca in C++
+->string strcasecmp (string s1, string s2) -- nu face diferenta intre minuscule si majuscule
+                                            ECHIVALENTUL LUI stricmp!!!
+->string strncasecmp --strnicmp!!
+
+
+                                --PRELUCRAREA SIRURILOR--
+
+->string strchr( sir1, sir2 ) -- VERIFICA DACA SIR2 EXISTA IN SIR1
+
+->string stristr(sir1, sir2) -- CAUTA SIR2 IN SIR1 SI RETURNEAZA ADRESA DE MEMORIE
+                            - NU FACE DIFERENTA DINTRE MAJUSCULE SI minuscule
+
+->string strrchr(sir1, sir2) --CAUTA SIR2 IN SIR1 DE LA INCEPUT LA SFARSITUL
+                            -NU AVEM ECHIVALENT IN C++;
+
+->string str_replace(string sub1, string sub2, string sir) 
+            --INLOCUIESTE TOATE APARITIILE LUI SUB2 CU SUB1 IN SIRUL SIR
+
+-> string substr(string sir, int start, int lg)
+            --RETURNEAZA SIRUL INCEPAND CU POZ START, DE LUNGIME lg
+
+-> string strtok(string sir, string sir_delimitator)
+
+    $s="Ana are mere";
+    $c=strtok($s," ");
+    while($c)
+    {
+        echo $c.' ';
+        $c=strtok(" ");
+    }
+
+
+--    FUNCTIA explode --> transforma un sir de caractere intr-un tablou asociativ
+
+    Sintaxa
+
+    $tablou_asociativ explode (sir_delimitativ, sir_de_caractere)
+
+    Exemplu: $s="Test la informatica."
+        $T=explode(" .",$s);
+
+    --> se formeaza un tablou asociativ cu $T[0]=Test, $T[1]=la, $T[2]=informatica;
+
+    pentru afisare: print_r($T)
+                    sau
+                    echo pe rand $T[$i];
+
+
+--    FUNCTIA implode --> transforma un tablou asociativ intr-un sir de caractere
+
+    Sintaxa
+                $T- TABLOU asociativ
+    string implode("caracterdelegatura", $T);
+
+------------------------------------------------------------------------------------------
+
+
+
+
+

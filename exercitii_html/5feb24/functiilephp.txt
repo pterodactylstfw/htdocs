@@ -1,0 +1,39 @@
+Forma generala
+
+function nume_functie(lista de parametri)
+                                -parametri transmisi prin valoare($x, $text, $a)
+                                -parametri transmisi prin referinta(&variabila)
+{
+    instructiunea1;
+    instructiunea2;
+    ...
+    instructiunean;
+    [return valoare] -> daca exista, atunci e functie cu tip
+                     -> altfel, e functie fara tip (void)-afisare in interiorul functiei, 
+                                furnizam rezultatul prin parametrii transmisi prin referinta
+}
+
+
+<?php
+
+    $x=10; -> VARIABILE GLOBALE
+
+    function ariepatrat($l)
+    {
+        $x=$l*$l; -> VARIABILE LOCALE
+        return $x;
+    }
+
+    function ariadreptunghi($l,$L)
+    {
+        $a=$L*$l;
+        echo $a;
+    }
+
+$rez1=ariepatrat(5);
+echi $rez1;
+echo '<br>';
+aria2(5,7);
+?>
+
+

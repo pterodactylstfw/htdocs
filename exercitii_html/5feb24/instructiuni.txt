@@ -1,0 +1,7 @@
+/* se citesc de la tastatura 3 numere. 
+pentru citirea numerelor folosim pagina numere.html, iar apoi cu ajutorul
+unui script php, verificati:
+    a) daca primul numar citit este prim-functie care returneaza 1 si 0 in fct de rezultat;
+    b) pentru al doilea numar, verificam daca este palindrom si furnizam rezultatul utilizand o functie prin parametrul $n;
+    c) pentru ultimul numar citit -> desc in factori primi (functie fara tip)
+     */
