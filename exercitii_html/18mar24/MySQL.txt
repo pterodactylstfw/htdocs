@@ -1,0 +1,12 @@
+create table Test(
+    id int(3) AUTO_INCREMENT primary key NOT NULL,
+    rezultat int(3),
+	nume varchar(30));
+
+INSERT INTO Test
+(nume, rezultat)
+VALUES
+('Ana', 3),
+('Alin',2),
+('Bogdan',4),
+('Irina',1);

@@ -1,0 +1,11 @@
+Pentru extragerea datelor din tabel, folosim fraza SELECT
+
+=> tablou asociativ
+=> se prelucreaza inregistrare cu inregistrare
+
+$z="SELECT FROM Persoana nume, punctaj";
+$rez=$conn -> $query ($z);
+while($linie=$rez -> fetch_array(MYSQL_ASSOC))
+{
+    echo $linie['nume'].' '.$linie['punctaj']."<BR>";
+}
