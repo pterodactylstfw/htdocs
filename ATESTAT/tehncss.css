@@ -2,6 +2,7 @@ body{
     background-color:black;
     
     margin:0;
+    min-width: 100vh;
     height: 100vh;
     font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
     color: white;
@@ -207,4 +208,3 @@ body{
 #links:visited{
   color: paleturquoise;
 }
-

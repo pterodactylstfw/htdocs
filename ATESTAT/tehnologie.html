@@ -6,6 +6,33 @@
     <meta charset="utf-8" lang="ro">
     <link rel="stylesheet" type="text/css" href="tehncss.css">
 
+<style>
+  .block {
+  display: block;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 24px;
+  background-color: #223299;
+  color: azure;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+}
+
+#videoclip{
+  position: relative;
+  bottom: 110px;
+  border: 2px solid #223299;
+  width: fit-content;
+  border-radius: 24px;
+}
+</style>
+
     <script>
         /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -36,7 +63,7 @@ function myFunction() {
             <br>
             <a href="produs.html">Produs</a>
             <br>
-            <a href="avantaje.html">Avantajele Li-Fi-ului</a>
+            <a href="avantaje.php">Avantajele Li-Fi-ului</a>
             <br>
             <a href="contact.html">Contact</a>
             <br>
@@ -59,7 +86,7 @@ function myFunction() {
     </div></div>
     
 
-    <div id="titlu"><h1 style="position: relative;">Li-Fi - <i>powered by <u><a id="links" href="https://www.purelifi.com/">pureLIFI</a></u> & <u><a id="links" href="main.html">LEDNET</a></u></i></h1></div>
+    <div id="titlu"><h1 style="position: relative;">Li-Fi - <i>powered by <u><a id="links" href="https://www.purelifi.com/">pureLIFI</a></u> & <u><a id="links" href="index.html">LEDNET</a></u></i></h1></div>
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
 
@@ -80,36 +107,10 @@ function myFunction() {
             <h3 style="text-align: center;"> *te vom contacta pe E-Mail sau pe numărul tău de telefon.*</h3></td></tr>
 
             <tr class="center"><center><td>
-              <div class="form">
-              <center><form method="POST" action="comanda.php">
-                <table border="1" style=" border: 2px solid ghostwhite; width: 85%; height:fit-content; font-size: 22px;">
-                <tr><p>
-                <td width="30%"><label for="fsname">Prenume </label></td>
-                <td colspan="2"><input style="width: 100%;" type="text" name="fname" id="fname"></td>
-                </p></tr>
-                <tr><p>
-                <td ><label for="lname">Nume </label></td>
-                <td colspan="2"><input style="width: 100%;" type="text" name="lname" id="lname"></td>
-                </p></tr>
-                <tr><p>
-                  
-                <td><label for="email">E-Mail</label></td>
-                <td colspan="2"><input style="width: 100%;" type="text" name="email" id="email"></td>
-
-                </p></tr>
-                <tr><p>
-                  <td><label for="numar">Număr de telefon</label></td>
-                  <td colspan="2"><input style="width: 100%;" type="text" name="number" id="number"></td>
-  
-                  </p></tr>
-                  
-
-                <tr</Tr>
-
-                <tr><p>
-                <td colspan=2><center><input type="submit" name="submit" id="submit" value="Submit"></center></td>
-                </p></tr>
-              </table></form></center></td></center></tr></table>
+            
+              <center><a href="formular.php"><button type="button" class="block" >COMANDĂ ACUM!</button></a></center>
+            
+            </center></td></center></tr></table>
         </div></td>
         <td><table style=" padding: 1%; border: 3px solid rgb(75, 73, 73); border-radius: 20px; "><tr><td><center><img src="icons/telefon.png" style="width: 90%;"></center></td>
         <td ><img style="height: 100%;" src="icons/shape_pic-4.png"></td></tr>
@@ -120,20 +121,21 @@ function myFunction() {
         <br><br>
 
         <center><h1>Vă recomandăm să urmăriți următorul videoclip pentru a înțelege principiul de funcționare, direct de la producător.</h1></center>
-        <center><div id="videoclip">
-        <iframe width="860" height="425" src="https://www.youtube.com/embed/AKvvEqm9Nv4?si=Hc-2cAcobomFFgb-" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; 
-        autoplay; clipboard-write; 
-        encrypted-media; gyroscope; 
-        picture-in-picture; web-share" 
-        allowfullscreen></iframe></center>
         
-    </div>
 
     
     </div>
+    <center><div id="videoclip">
+      <iframe width="860" height="425" src="https://www.youtube.com/embed/AKvvEqm9Nv4?si=Hc-2cAcobomFFgb-" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; 
+      autoplay; clipboard-write; 
+      encrypted-media; gyroscope; 
+      picture-in-picture; web-share" 
+      allowfullscreen></iframe></center>
+      
+  </div>
     
     <div class="footer">
       <center><p>© 2024 Raul Constantin. Toate drepturile rezervate.</p></center></div>
