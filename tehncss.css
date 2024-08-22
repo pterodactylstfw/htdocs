@@ -1,0 +1,210 @@
+body{
+    background-color:black;
+    
+    margin:0;
+    min-width: 100vh;
+    height: 100vh;
+    font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+.center {
+    
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .blur {
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/044/765/038/large/philip-butkiewicz-bluepurple-preview.jpg?1641099260');
+    top: 100px;
+    background-size: 100%;
+    background-attachment: fixed;
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow: 0px 0px 2px rgba(0,0,0,.25);
+    
+    
+    text-align: center;
+    font-size: 24px;
+    font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
+    padding: 24px;
+  }
+  
+  .header{
+    display: flex;
+    position: sticky;
+    top: -1;
+    transition: all 0.2s ease-in-out;
+    min-height: 85px;
+    height: fit-content;
+    z-index: 1; 
+    
+    width: 100%;
+    
+    
+  }
+  
+  .header img{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headtable{
+  position: absolute;
+  left: 0.9px;
+  margin: 0;
+  width: 99%;  
+  }
+  
+  #lednetlogo{
+  width: 33.33%;
+  padding-top:5px;
+  }
+  
+  #butauth{
+  color: white;
+  
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 6px;
+    background-color: white;
+    margin: 5px 0;
+    }
+
+/*MENIU*/
+/* The side navigation menu */
+.sidenav {
+    border: 1px solid white;
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+ 
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #imaginesdb{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+   @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #popupbox{
+    margin: 0; 
+    margin-left: 40%; 
+    margin-right: 40%;
+    margin-top: 50px; 
+    padding-top: 10px; 
+    width: 20%; 
+    height: 150px; 
+    position: absolute; 
+    background: #FBFBF0; 
+    border: solid #000000 2px; 
+    z-index: 9; 
+    font-family: arial; 
+    visibility: hidden; 
+    }
+
+  #titlu{
+    width: 98%;
+    padding-top: 15px;
+    padding-left: 20px;
+    height: auto;
+  }
+
+  #main{
+    
+    
+    height: 100%;
+    padding: 50px;
+    padding-bottom: 12%;
+    margin: 0;
+    
+  }
+
+  .prezentare{
+    
+    width:90%;
+    height: 900px;
+    margin: 20px;
+    padding: 45px;
+
+  }
+
+  #tabelprez{
+    padding-left:1%;
+    padding-right: 1%;
+    border: 2px solid rgba(85, 40, 127, 0.498);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .formcontact{
+    width: 100%;
+    margin-left:auto ;
+    margin-right: auto;
+  }
+
+  
+
+
+  .footer{
+    margin-bottom: 0;
+    margin-top:auto;
+    background-color:rgba(85, 40, 127, 0.498);
+    
+  }
+
+#links:hover{
+  color: rgb(33, 140, 130);
+}
+
+#links:visited{
+  color: paleturquoise;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mainstyle.css">
+    <title>Pagina Acasă</title>
+
+      <script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "300px";
+}
+
+function myFunction() {
+  location.replace("http://localhost/phpmyadmin")
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+    </script>
+</head>
+
+
+<body>
+
+  <div class="blur"><div class="header">
+    <table class="headtable">
+    <tr>
+        <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br><br><br>
+        <a href="index.html">Acasă</a>
+        <br>
+        <a href="tehnologie.html">Tehnologie</a>
+        <br>
+        <a href="produs.html">Produs</a>
+        <br>
+        <a href="avantaje.php">Avantajele Li-Fi-ului</a>
+        <br>
+        <a href="contact.html">Contact</a>
+        <br>
+        <a href="about.html">Despre noi</a>
+
+  <center><div id="imaginesdb"><a href="index.html"><img src="icons/LEDNETtxt.png"></a></div></center>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div></span></td>
+
+      <center><td id="lednetlogo" ><a href="index.html"><center><img src="icons/LEDNETtxt.png"></center></a></td></center>
+
+      <td><button onclick="myFunction()" style="float: right; width: 100px; height: 40px;  border-radius: 5px; text-align: center; font-size: medium;">PHP</button></td>
+
+
+    </tr> </table>
+</div></div>
+
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      
+      <div id="continut">
+        <table id="contenttable">
+          <tr>
+            
+            <td style=" width: 50%; padding-left: 20%; margin-right: 5%;"><p style="font-size: 32px;">Atinge viteza luminii cu noul Li-Fi XC.</p>
+            <p style="font-size: 32px;"> Disponibil în România din 2024.</p>
+            <br>
+            <p style="font-size: 22px;"><a href="tehnologie.html">Vezi mai multe >></a> </p>
+
+          </td>
+            
+            <td >
+              <table  style="height: 100%; "> <tr>
+            <td style="width:fit-content ; "><img src="icons/accpoint.png"></td>
+            <td ><img src="icons/stick.png" style="height: 30%;"></td></tr></table>
+          </td>
+            
+          </tr>
+        </table>
+      
+      </div>
+      
+      </div>   
+
+      <div id="secondary">
+      <table>
+
+        <tr>
+          <td style="border: 1px solid gray; border-radius: 25px; width: 60%;"><img  style=" border-radius: 25px;" src="icons/teardown.png" width="100%" height="20%"></td>
+          <td style="font-size: 28px; text-align: right; padding-right: 1%; padding-left: 1%;">
+            <p>Cu ajutorul noii tehnologii ce va înlocui Wi-Fi-ul, vă puteți bucura de o experiență captivantă pe internet, indiferent de domeniul în care îl folosiți.</p>
+            <br>
+            <p style="text-align: left;">De ce aveți nevoie pentru a utiliza echipamentul?</p>
+            <ul style="text-align: left;">
+              <li>Lumină LED, prin intermediul becurilor de acest fel.</li>
+              <li>Abonament la internet, de la un furnizor de servicii.</li>
+              <li>800€, pentru achiziționarea acestui pachet, ce conține produsul propriu-zis și instalarea lui, realizată de către echipa noastră. </li>
+            </ul>
+
+          </td> </tr>
+      </table>
+    </div>
+
+    <div class="footer">
+      <center><p>© 2024 Raul Constantin. Toate drepturile rezervate.</p></center></div>
+      
+
+</body>
+</html>

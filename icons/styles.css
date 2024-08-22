@@ -1,0 +1,160 @@
+/* The side navigation menu */
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+.header {
+  text-align: center;
+  background: #2109412a;
+  color: white;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height:7vh;
+  position: fixed;
+    z-index: 999;
+}
+.footer {
+  
+  background-color: #2109415a;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+body{
+  background-color: black;
+  background-size: 100%;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/*MENIUUUUUUUUUUUUUUU!!!!!!!!!!!!!!!!!!!!*/
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #000000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/*BUTON MENIU*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.autentificare{
+  position: relative;
+  right: 5px;
+  align-items: flex-end;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.4s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.icoane a:hover,a:active,a:focus{
+  color: #000000;}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.content{
+  
+  
+  margin-top: 7vh;
+  border: 1px solid white;
+  height: 100%;
+  
+}
+
+.product{
+  padding-top: 7vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+}
+.product img{
+  transform: rotate(270deg);
+  border: 1px solid white;
+
+}
+
+.txtstg{
+  
+
+  font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
+  font-size: 40px;
+  text-align: right;
+  border: 1px solid white;
+  color: white;
+}
+
+.txtdr{
+  position: absolute;
+  float: right;
+
+
+  
+  
+  font-family: -apple-system-pro, BlinkMacSystemFont, sans-serif;
+  font-size: 40px;
+  border: 1px solid white;
+  color: white;
+}
+
+
+
+
+
+
+
+

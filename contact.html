@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="contactcss.css">
+<meta charset="utf-8" lang="ro">
+
+<script>
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+document.getElementById("mySidenav").style.width = "300px";
+}
+
+function myFunction() {
+  location.replace("http://localhost/phpmyadmin")
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</head>
+
+<body>
+
+    <div class="blur"><div class="header">
+        <table class="headtable">
+        <tr>
+            <td style=" position: relative;left: 9px;width: 33.33%;"><div id="mySidenav" class="sidenav" style="border: 1px solid white;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br><br><br>
+            <a href="index.html">Acasă</a>
+            <br>
+            <a href="tehnologie.html">Tehnologie</a>
+            <br>
+            <a href="produs.html">Produs</a>
+            <br>
+            <a href="avantaje.php">Avantajele Li-Fi-ului</a>
+            <br>
+            <a href="contact.html">Contact</a>
+            <br>
+            <a href="about.html">Despre noi</a>
+    
+      <center><div id="imaginesdb"><a href="index.html"><img src="icons/LEDNETtxt.png"></a></div></center>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"><div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div></span></td>
+    
+            <center><td id="lednetlogo" ><a href="index.html"><center><img src="icons/LEDNETtxt.png"></center></a></td></center>
+    
+          <td><button onclick="myFunction()" style="float: right; width: 100px; height: 40px;  border-radius: 5px; text-align: center; font-size: medium;">PHP</button></td>
+    
+    
+        </tr> </table>
+    </div></div>
+    
+    
+    
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+            <h1> CONTACT</h1>
+            <h2>Aici ne poți contacta, în legătură cu orice consideri că trebuie să ne spui (despre produs, despre colaborare sau alte nelămuriri). Așteptăm mesajul tău!</h2>
+
+            
+            
+        <table border="1" height="800px">
+            
+            <tr>
+                <td width="50%"><div class="form">
+                    <center><h1>Formular</h1></center>
+                    <center><form method="POST" action="contact.php">
+                      <table border="2" style="width: 20%; border: 2px solid ghostwhite; width: 85%; height:fit-content; font-size: 22px;">
+                      <tr><p>
+                      <td width="30%"><label for="fname">Prenume </label></td>
+                      <td colspan="2"><input style="width: 100%;" type="text" name="fname" id="fname"></td>
+                      </p></tr>
+                      <tr><p>
+                      <td ><label for="lname">Nume </label></td>
+                      <td colspan="2"><input style="width: 100%;" type="text" name="lname" id="lname"></td>
+                      </p></tr>
+                      <tr><p>
+                        
+                      <td><label for="email">E-Mail</label></td>
+                      <td colspan="2"><input style="width: 100%;" type="text" name="email" id="email"></td>
+      
+                      </p></tr>
+                      <tr><p>
+                        <td><label for="numar">Număr de telefon</label></td>
+                        <td colspan="2"><input style="width: 100%;" type="text" name="number" id="number"></td>
+        
+                        </p></tr>
+                        
+      
+                      
+      
+                      <tr><p>
+                      <td colspan=2><center><input type="submit" name="submit" id="submit" value="Submit"></center></td>
+                      </p></tr>
+                    </table></form></center>
+                
+                <br><br>
+                <div id="infonoi" ></div>
+                <h2 style="padding-left: 20px;">E-Mailul nostru: lednet@gmail.com</h2>
+                <h2 style="padding-left: 20px;">Mobil: 0720441134</h2>
+                </td>
+              
+
+                
+           
+                    <td width="50%">
+            
+                <p style="font-size: 30px; padding-left:5% ;">Aici mă puteți găsi:</p>
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.835588475982!2d25.60657207751317!3d45.654123371077816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b864b521b07%3A0x2d4bbd497f54d005!2zQ29sZWdpdWwgTmHIm2lvbmFsICJEci4gSW9hbiBNZciZb3TEgyI!5e0!3m2!1sro!2sro!4v1704289035069!5m2!1sro!2sro" 
+                    width="100%"
+                    height="60%" 
+                    style="border:0; margin-left: auto; margin-right: auto;"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    eferrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                
+                
+             </tr> </table>
+
+        </div>
+    
+
+        
+        
+
+        <div class="footer">
+            <center><p>© 2024 Raul Constantin. Toate drepturile rezervate.</p></center></div>
+
+
+</body>
+
+</html>
